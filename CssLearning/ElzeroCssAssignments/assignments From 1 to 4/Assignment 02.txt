@@ -1,0 +1,12 @@
+<!-- External Style -->
+<link rel="stylesheet" href="css/file.css" />
+
+<!-- internal Style -->
+<style>
+p {
+  color: red;
+}
+</style>
+
+<!-- inline Style -->
+<p style="color: blue;">This Is Our Paragraph</p>
