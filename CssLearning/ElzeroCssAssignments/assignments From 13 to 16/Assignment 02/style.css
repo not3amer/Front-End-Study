@@ -1,0 +1,13 @@
+.title-one
+,.title-two
+,.title-three
+,.title-four{
+    background-color: brown;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    width: fit-content;
+    max-width: 400px;
+    max-height: 20px;
+    overflow: hidden;
+}
