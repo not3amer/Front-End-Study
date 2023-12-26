@@ -1,0 +1,33 @@
+.parent{
+    width: 800px;
+    background-color: #eee;
+    overflow: hidden;
+    text-align: center;
+}
+.child-full{
+    
+    background-color: #767373;
+    width: calc(100% - (2*15px));
+    margin: 15px ;
+}
+.child-third{
+    background-color: #767373;
+    width: calc((100% - (4*15px)) / 3);
+    float: left;
+    margin-left: 15px;
+}
+.child-half{
+    background-color: #767373;
+    width: calc((100% - (3*15px)) / 2);
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px ;
+    margin-bottom: 15px;
+}
+.child-quarter{
+    background-color: #767373;
+    width: calc((100% - (5*15px)) / 4);
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 15px ;
+}
