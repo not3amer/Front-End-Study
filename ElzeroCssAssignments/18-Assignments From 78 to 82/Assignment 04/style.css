@@ -1,0 +1,8 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body > [title]:not(.no-need){
+  color: red;
+}
