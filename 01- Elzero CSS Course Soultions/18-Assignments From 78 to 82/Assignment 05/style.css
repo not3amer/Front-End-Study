@@ -1,0 +1,8 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+div:not(.no-need) > [title]:not(.no-need):last-child{
+  color: red;
+}

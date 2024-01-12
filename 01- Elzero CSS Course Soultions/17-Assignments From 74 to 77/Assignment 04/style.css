@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+.continer{
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  gap: 15px;
+}
+.e-letter{
+  display: grid;
+  grid-template-columns:40px 40px 40px 40px ;
+  grid-template-rows: 10% 10% 10%;
+  align-content: space-between;
+  position: relative;
+} 
+.e-letter::after{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fea604;
+  animation: move-e 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-direction:alternate ;
+  animation-delay: 4s;
+}
+@keyframes move-e {
+  16.6%{
+    top: 5px;
+    right: 82%;
+  }
+  33.3%{
+    top: 46%;
+    right: 82%;
+  }
+  49.9%{
+    top: 46%;
+    right: 5px;
+  }
+  66.5%{
+    top: 46%;
+    right: 82%;
+  }
+  83.13%{
+    top: 92%;
+    right: 82%;
+  }
+  100%{
+    top: 92%;
+    right: 5px;
+  }
+}
+.l-letter div,
+.e-letter div{
+  background-color: #323234;
+}
+.e-letter .one{
+  grid-row-start: 1;
+  grid-row-end:4;
+}
+.e-letter .two{
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.e-letter .three{
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.e-letter .four{
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.l-letter{
+  display: grid;
+  grid-template-columns:40px 40px 40px 40px ;
+  grid-template-rows: 10% 10% 10% ;
+  align-content: space-between;
+  position: relative;
+}
+.l-letter::after{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fea604;
+  animation: move-l 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  opacity: 0;
+  
+}
+@keyframes move-l {
+  5%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+    bottom: 5px;
+    right: 81%;
+  }
+  70%{
+    opacity: 1;
+    bottom: 92%;
+    right: 81%;
+  }
+  100%{
+    opacity: 0;
+    bottom: 92%;
+    right: 81%;
+  }
+}
+.l-letter .one{
+  grid-row-start: 1;
+  grid-row-end:4;
+}
+.l-letter .two{
+  grid-row-start:3 ;
+  grid-row-end:4 ;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}

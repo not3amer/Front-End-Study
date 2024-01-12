@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+div{
+ width: 400px;
+ background-color: #dddddd;
+ padding: 20px;
+ font-size: 20px;
+ margin: 40px auto;
+}
+
+.arrow{
+  position: relative;
+}
+.arrow::after{
+  content: "";
+  position: absolute;
+  border: 15px solid transparent;
+}
+.top:after{
+  border-bottom-color: #dddddd;
+  left: calc(50% - 15px);
+  top: -29px;
+}
+.right:after{
+  border-left-color: #dddddd;
+  right: -29px;
+  top: calc(50% - 15px);
+}
+.bottom:after{
+  border-top-color: #dddddd;
+  left: calc(50% - 15px);
+  bottom: -29px;
+}
+.left:after{
+  border-right-color: #dddddd;
+  left: -29px;
+  top: calc(50% - 15px);
+}

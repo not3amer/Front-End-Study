@@ -1,0 +1,14 @@
+div{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEE;
+  color: #ff5722;
+  box-shadow:
+  10px 0px 0 0 #ff5722,
+  -10px 0px 0 0 #03a9f4;
+}

@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10% 90%;
+  gap: 10px;
+  
+}
+.grid div{
+  background-color: #607d8b;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  counter-increment: element;
+}
+.grid div::before{
+  content: "Element " counter(element);
+  color: white;
+}
