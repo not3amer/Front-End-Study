@@ -1,0 +1,29 @@
+.normal {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgba(128, 128, 128);
+    color: black;
+  }
+.one {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgba(128, 128, 128,0.1);
+    color: black;
+  }
+.two {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgba(128, 128, 128);
+    opacity:0.1 ;
+    color: black;
+    
+  }

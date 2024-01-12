@@ -1,0 +1,17 @@
+/* Firest Shape */
+/* div{
+    width: 400px;
+    background-color: #EEE;
+    padding: 10px;
+} */
+
+
+/* Third Shape */
+div{
+    width: 400px;
+    background-color: #EEE;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

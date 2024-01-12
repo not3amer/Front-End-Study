@@ -1,0 +1,36 @@
+div{
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  background-color: #EEE;
+  border-bottom: red 2px solid;
+  border-top: red 2px solid;
+  border-left: blue 2px solid;
+  border-right: blue 2px solid;
+  position: relative;
+}
+span
+{
+  background-color: blue;
+  position: absolute;
+}
+.top-left{
+  top: -10px;
+  left: -5px;
+  border-right: red 2px solid;
+}
+.top-right{
+  top: -10px;
+  right: -5px;
+  border-left: red 2px solid;
+}
+.bottom-left{
+  bottom: -10px;
+  left: -5px;
+  border-right: red 2px solid;
+}
+.bottom-right{
+  bottom: -10px;
+  right: -5px;
+  border-left: red 2px solid;
+}
