@@ -1,1 +1,0 @@
-https://elzero.org/frontend-card-with-transparent-img/
