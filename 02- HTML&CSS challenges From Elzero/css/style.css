@@ -1,0 +1,255 @@
+/* Start Globl Rules */
+:root{
+  scroll-behavior: smooth;
+  --main-color: #03a9f4;
+  --bg-color: #EEE;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.continer{
+  padding: 0 15px 0 15px;
+  margin: 0 auto 0 auto;
+}
+/* Small Screens */
+@media(min-width:768px){
+  .continer{
+      width: 750px;
+  }
+}
+/* Medium Screens */
+@media(min-width:992px){
+  .continer{
+      width: 970px;
+  }
+}
+/* Large Screens */
+@media(min-width:1200px){
+  .continer{
+      width: 1170px;
+  }
+}
+/* End Globl Rules */
+/* start header */
+header{
+  padding: 15px 0;
+}
+header .continer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul li{
+  padding: 10px;
+}
+/* End header */
+/* Start Landing */
+.landing{
+  background-color: var(--bg-color);
+  padding: 80px 0;
+}
+.landing .continer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.landing .continer h2{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.landing .continer span{
+  color: var(--main-color);
+}
+.landing .continer p{
+  text-align: center;
+  line-height: 1.6;
+}
+/* End Landing */
+/* Start feature */
+.feature{
+  padding: 50px 0;
+}
+.feature .continer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature .continer .card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width:calc(100% / 3);
+}
+.feature .continer .card p{
+  text-align: center;
+  color: #a6979c;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+@media(max-width:767px){
+  .feature .continer .card{
+      width: 100%;
+      margin-bottom: 30px;
+  }
+}
+/* End feature */
+/* start about */
+.about{
+  padding: 60px 0;
+  background-color: var(--bg-color);
+}
+.about .continer{
+  display: flex;
+  align-items: center;
+}
+.about img{
+  width: 300px;
+}
+.about .text{
+  flex: 1;
+  margin-left: 40px;
+}
+.about .text h2{
+  font-size: 30px;
+  margin-bottom: 15px ;
+}
+.about .text p{
+  line-height: 1.8;
+}
+@media(max-width:767px){
+  .about img{
+      display: none;
+  }
+  .about .text{
+    text-align: center;
+    margin: 0;
+  }
+}
+/* End About */
+/* Start Profile */
+.profile{
+  padding: 60px 0;
+}
+.profile .continer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.profile .box{
+  width: calc((100% / 3) - 20px);
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+@media(max-width:767px){
+  .profile .box{
+    width: 100%;
+    margin-bottom:20px ;
+  }
+}
+.profile .services-Profile{
+  background-color: #b33939;
+}
+.profile .clients-Profile{
+  background-color: #227093;
+}
+.profile .designs-Profile{
+  background-color: #218c74;
+}
+.profile .box h3{
+  font-size: 40px;
+}
+/* End Profile */
+/* Start Skills */
+.skills{
+  padding: 60px;
+  background-color: var(--bg-color);
+}
+.skills .continer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.skills .continer h2{
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.skill{
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills .continer .skill p{
+  font-weight: bold;
+}
+.skill .rectangle{
+  margin-left: 10px;
+  width: 90%;
+  height: 50px;
+  background-color: white;
+  position: relative;
+}
+.skill .rectangle::before{
+  content: "60%";
+  position: absolute;
+  width: 60%;
+  color: white;
+  height: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+} 
+.skill .css::before{
+  content: "70%";
+  width: 70%;
+}
+.skill .js::before{
+  content: "80%";
+  width: 80%;
+}
+.skill .php::before{
+  content: "65%";
+  width: 65%;
+}
+.skill .python::before{
+  content: "95%";
+  width: 95%;
+}
+@media(max-width:767px){
+  .skill .rectangle{
+    width: 70%;
+  }
+}
+/* End Skills */
+/* Start Footer */
+footer{
+  background-color: #333333;
+}
+footer .continer{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #333333;
+  color: white;
+}
+@media(max-width:767px){
+  footer .continer{
+    font-size: 10px;
+  }
+}
+/* End Footer */
